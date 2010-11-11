@@ -5,13 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "redis_geo"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = "Some extra geocoding and caching smarts atop geokit"
+    gem.description = "Some extra geocoding and caching smarts atop geokit"
     gem.email = "joe@citizenlogistics.com"
-    gem.homepage = "http://github.com/jxe/redis_geo"
+    gem.homepage = "http://github.com/citizenlogistics/redis_geo"
     gem.authors = ["Joe Edelman"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.add_dependency "geokit"
+    gem.add_dependency "methodcache"
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
