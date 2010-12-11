@@ -1,8 +1,8 @@
 require 'helper'
 
-class TestRedisGeo < Test::Unit::TestCase
+class TestGeonozzle < Test::Unit::TestCase
   def assert_geo loc, cnum, lat, lng, acc
-    assert g = RedisGeo.universal_geocode(loc, RedisGeo::City.num(cnum))
+    assert g = Geonozzle.universal_geocode(loc, Geonozzle::City.num(cnum))
     assert_equal lat, g.lat
     assert_equal lng, g.lng
     assert_equal acc, g.precision

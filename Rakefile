@@ -4,11 +4,11 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "redis_geo"
+    gem.name = "geonozzle"
     gem.summary = "Some extra geocoding and caching smarts atop geokit"
     gem.description = "Some extra geocoding and caching smarts atop geokit"
     gem.email = "joe@citizenlogistics.com"
-    gem.homepage = "http://github.com/citizenlogistics/redis_geo"
+    gem.homepage = "http://github.com/citizenlogistics/geonozzle"
     gem.authors = ["Joe Edelman"]
     gem.add_dependency "geokit"
     gem.add_dependency "methodcache"
@@ -47,7 +47,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "redis_geo #{version}"
+  rdoc.title = "geonozzle #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

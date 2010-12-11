@@ -1,4 +1,4 @@
-module RedisGeo
+module Geonozzle
   class City < Struct.new(:num, :name, :lat, :lng)
     include GeoKit::Mappable
     extend MethodCache::ModuleExtensions

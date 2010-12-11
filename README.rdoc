@@ -1,4 +1,4 @@
-= redis_geo
+= geonozzle
 
 Description goes here.
 

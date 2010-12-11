@@ -1,4 +1,4 @@
-module RedisGeo
+module Geonozzle
   module Locstring
     STREET_ENDINGS = %w{
       st rd pl av ave street road blvd circle cir

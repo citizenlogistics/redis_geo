@@ -3,12 +3,12 @@ require 'tzinfo'
 require 'set'
 require 'methodcache'
 
-require 'redis_geo/country_codes'
-require 'redis_geo/city'
-require 'redis_geo/cities'
-require 'redis_geo/locstring'
+require 'geonozzle/country_codes'
+require 'geonozzle/city'
+require 'geonozzle/cities'
+require 'geonozzle/locstring'
 
-module RedisGeo
+module Geonozzle
   extend MethodCache::ModuleExtensions
   module_function
   PretendGeo = Struct.new(:lat, :lng, :acc, :cc2)
