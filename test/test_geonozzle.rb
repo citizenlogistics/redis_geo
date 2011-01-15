@@ -13,7 +13,7 @@ class TestGeonozzle < Test::Unit::TestCase
     assert_geo "cherry st",  220, 42.3241601, -72.6285171, "zip+4"
     assert_geo "mobile, al", 220, 30.6943566, -88.0430541, "city"
     assert_geo "mobile, al", nil, 30.6943566, -88.0430541, "city"
-    assert_geo "1 haywood rd asheville",  nil, 35.5848153, -82.569169, "address"
+    assert_geo "1 haywood rd asheville",  nil, 35.5848508, -82.5691946, "address"
     assert_geo "19 lawrence road lahore", nil, 31.5522173, 74.3271002, "zip+4"
     assert_geo "santa cruz, ca", 220, 36.9741171, -122.0307963, "city"
   end
